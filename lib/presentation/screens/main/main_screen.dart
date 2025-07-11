@@ -26,6 +26,7 @@ class _MainScreenState extends ConsumerState<MainScreen> {
     '/results',
     '/careers',
     '/profile',
+    '/teachers',
   ];
 
   void _onItemTapped(int index) {
@@ -69,6 +70,11 @@ class _MainScreenState extends ConsumerState<MainScreen> {
             icon: const Icon(Icons.person_outline),
             selectedIcon: const Icon(Icons.person),
             label: AppStrings.profile,
+          ),
+          NavigationDestination(
+            icon: const Icon(Icons.create_outlined),
+            selectedIcon: const Icon(Icons.create),
+            label: 'Estudiantes',
           ),
         ],
       ),
