@@ -27,6 +27,8 @@ import '../../bounded-context/results/screens/results_list_screen.dart';
 import '../../bounded-context/tests/screens/test_list_screen.dart';
 import '../../bounded-context/tests/screens/test_detail_screen.dart';
 
+import '../../bounded-context/teachers/views/ListStudents.dart';
+
 import '../constants/app_colors.dart';
 import '../constants/app_sizes.dart';
 
@@ -68,6 +70,10 @@ final appRouterProvider = Provider<GoRouter>((ref) {
           GoRoute(
             path: '/',
             builder: (context, state) => const HomeScreen(),
+          ),
+          GoRoute(
+            path: '/teachers',
+            builder: (context, state) => const Liststudents(),
           ),
           GoRoute(
             path: '/tests',
